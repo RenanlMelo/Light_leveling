@@ -1,0 +1,15 @@
+{
+    "name": "leveling/email-api",
+    "autoload": {
+        "psr-4": {
+            "Leveling\\EmailApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RenanlMelo",
+            "email": "renanlaramelo@gmail.com"
+        }
+    ],
+    "require": {}
+}

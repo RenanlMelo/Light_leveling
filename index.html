@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/logo.ico" />
+
+    <link
+      rel="preload"
+      as="image"
+      href="/images/introducao.webp"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/introducao_desktop.webp"
+      fetchpriority="high"
+    />
+
+    <!-- Google Ads -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-17386294382"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "AW-17386294382");
+    </script>
+    <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof url != "undefined") window.location = url;
+        };
+        gtag("event", "conversion", {
+          send_to: "AW-17386294382/nBcmCOHlgvgaEO6Yt-JA",
+          event_callback: callback,
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Instrument+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Instrument+Sans:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Leveling Corporation specializes in automation, innovation, and efficient digital solutions. Discover how we transform businesses with cutting-edge technology and intelligent systems."
+    />
+
+    <title>Leveling Corporation</title>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1834535090821720");
+      fbq("track", "PageView");
+    </script>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1834535090821720&ev=PageView&noscript=1"
+    /></noscript>
+    <script type="module" src="/src/app/main.tsx"></script>
+  </body>
+</html>

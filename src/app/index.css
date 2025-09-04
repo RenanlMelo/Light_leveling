@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+* {
+  cursor: none;
+}
+
+:root {
+  --font-instrument-sans: "Instrument Sans", sans-serif;
+  --font-atkinson-hyperlegible: "Atkinson Hyperlegible", sans-serif;
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #123524;
+  --primaryL: #32855d;
+  --primaryxL: #41b17b;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fff;
+    --foreground: #000000;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #fff;
+    --foreground: #000000;
+  }
+}
+
+body {
+  background: url("/images/hero_light.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+  margin: 0;
+  padding: 0;
+  color: var(--foreground);
+  font-family: var(--font-instrument-sans);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #4b4b4b;
+  border-radius: 8px;
+  border: 2px solid #000;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4b4b4b #000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  background-color: #303030 !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@keyframes click-scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button-click-animation:active {
+  animation: click-scale 0.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease forwards;
+}

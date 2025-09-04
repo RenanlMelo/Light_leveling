@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /private/
+Disallow: /temp/
+Allow: /
+
+# Impede o rastreamento de parâmetros comuns (útil para evitar conteúdo duplicado)
+Disallow: /*?*
+Disallow: /*&*
+
+# Impede rastreamento de arquivos específicos (se existirem)
+Disallow: /404
+Disallow: /server-error
+
+# Tempo entre requisições para evitar sobrecarga (opcional)
+Crawl-delay: 5
+
+# Sitemap do seu site
+Sitemap: https://levelingcorp.com.br/sitemap.xml
